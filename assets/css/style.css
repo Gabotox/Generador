@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;800&family=Caveat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --titulo: 3.5rem;
+    --mayuscula: uppercase;
+    --verde: #19C37D;
+    --verdeHover: #189c65;
+    --colorLetras: #333333;
+    --colorBlanco: #ffffff;
+    --degrade: linear-gradient(10deg, #19C37D 48%, #ffffff 100%);
+}
+
+.letras {
+    font-family: 'Caveat', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+}
+
+
+header {
+
+}
+
+nav {
+    padding: 1rem 1rem !important;
+    transition: all .5s ease;
+}
+.nav-link {
+    color: #f2f2f2 !important;
+}
+.logo {
+    font-size: 2rem !important;
+    font-weight: 800;
+    color: var(--colorBlanco) !important;
+}
+
+.navbar-toggle {
+    background: var(--verde) !important;
+}
+.navbar-toggle span {
+    background: var(--verde);
+}
+
+
+.navbar-nav li {
+    padding: .4rem .7rem !important;
+}
+.navbar-nav li:nth-child(3){
+    background: var(--verde);
+    transition: all .5s ease;
+}
+
+.btno {
+    background: var(--verde) !important;
+    color: var(--colorBlanco) !important;
+}
+
+.conten {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.titulo {
+    color: var(--colorBlanco);
+    margin: 3rem 0;
+    text-align: center;
+    letter-spacing: -1px;
+    font-weight: 600;
+}
+
+#formulario {
+    width: 45%;
+}
+#output {
+    width: 45%;
+    max-height: 450px !important;
+    margin-top: 0 !important;
+    overflow-y: scroll; 
+    position: relative;
+}
+
+#output::-webkit-scrollbar {
+    width: 8px; /* Ancho de la barra de desplazamiento */
+}
+
+#output::-webkit-scrollbar-thumb {
+    background-color: var(--verde); /* Color del 'pulgarcito' de la barra */
+    border-radius: 20px !important;
+}
+
+#output::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color de fondo de la barra de desplazamiento */
+}
+
+#output::-webkit-scrollbar-corner {
+    background-color: #ccc; /* Color de la esquina de la barra de desplazamiento */
+    border-radius: 20px !important;
+}
+
+/* Estilos adicionales para la barra horizontal */
+#output::-webkit-scrollbar-horizontal {
+    height: 12px; /* Altura de la barra de desplazamiento horizontal */
+}
+#output td{
+    color: var(--colorBlanco) !important;
+    border: 1px solid var(--colorBlanco);
+    text-align: center;
+}
+#output table {
+    border: 1px solid var(--colorBlanco);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#output tr th{
+    background: var(--verde);
+    border: 1px solid var(--colorBlanco);
+    color: var(--colorBlanco);
+}
+
+#output tr th:nth-child(1), #output tr th:nth-child(2){
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+
+h3 {
+    color: var(--colorBlanco) !important;
+    position: sticky;
+    top: 0;
+    transition: all .4s ease;
+    padding: .5rem;
+    font-size: 1.5rem !important;
+}
+
+.claseAlterna {
+    background: var(--verde) !important;
+}
+
+.claseNavFijo {
+    background: #00000041 !important;
+    backdrop-filter: blur(10px);
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    padding-top: 3rem 1rem !important;
+}
+
+.claseBtn {
+    
+}
+
+
+@media (width <= 768px) {
+    .conten {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    #formulario {
+        width: 100%;
+    }
+    #output {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    background-color: #0e0e0e !important;
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+}
+
+form {
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: var(--verde);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#output {
+    margin-top: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
